@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "App Container"
+rootProject.name = "App Catalog"
 include(":app")
  

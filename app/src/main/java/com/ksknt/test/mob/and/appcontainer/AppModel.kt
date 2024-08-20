@@ -8,12 +8,14 @@ data class AppModel(
     val description: String,
     val linkURL: String? = null,
     val destinationURL: String? = null,
-    val functionalities: List<AppFunctionalityModel>) {
+    val functionalities: List<AppFunctionalityModel>
+) {
 }
 
 data class AppFunctionalityModel(
     val name: String,
-    val description: String) {
+    val description: String
+) {
 }
 
 val APPS = listOf(
@@ -63,15 +65,23 @@ val APPS = listOf(
         functionalities = listOf(
             AppFunctionalityModel(
                 name = "State and MutableState",
-                description = "State in an app is any value that can change over time"
+                description = "State in an app is any value that can change over time."
             ),
             AppFunctionalityModel(
                 name = "Input Text",
-                description = "Use recomposition on input texts"
+                description = "Use recomposition on input texts and leading icons. "
             ),
             AppFunctionalityModel(
                 name = "State Hoisting",
                 description = "State hoisting is a pattern of moving state to its caller to make a component stateless."
+            ),
+            AppFunctionalityModel(
+                name = "Switch",
+                description = "Switch component."
+            ),
+            AppFunctionalityModel(
+                name = "Testing",
+                description = "Local and instrumentation tests."
             )
         )
     )

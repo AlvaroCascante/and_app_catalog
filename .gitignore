@@ -32,3 +32,4 @@ gradlew
 gradlew.bat
 
 app/build*
+build/
