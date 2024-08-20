@@ -1,6 +1,7 @@
 package com.ksknt.test.mob.and.appcontainer
 
 import com.ksknt.test.mob.and.appcontainer.diceRoller.DiceRollerDestination
+import com.ksknt.test.mob.and.appcontainer.tipCalculator.TipCalculatorDestination
 
 data class AppModel(
     val name: String,
@@ -51,6 +52,26 @@ val APPS = listOf(
             AppFunctionalityModel(
                 name = "Refresh UI",
                 description = "Refresh the UI with the mutableStateOf() function to make an observable"
+            )
+        )
+    ),
+    AppModel(
+        name = "Tip Calculator",
+        description = "A tip calculator app",
+        linkURL = "https://github.com/google-developer-training/basic-android-kotlin-compose-training-tip-calculator.git",
+        destinationURL = TipCalculatorDestination.route,
+        functionalities = listOf(
+            AppFunctionalityModel(
+                name = "State and MutableState",
+                description = "State in an app is any value that can change over time"
+            ),
+            AppFunctionalityModel(
+                name = "Input Text",
+                description = "Use recomposition on input texts"
+            ),
+            AppFunctionalityModel(
+                name = "State Hoisting",
+                description = "State hoisting is a pattern of moving state to its caller to make a component stateless."
             )
         )
     )

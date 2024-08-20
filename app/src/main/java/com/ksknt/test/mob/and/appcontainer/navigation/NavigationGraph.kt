@@ -10,6 +10,8 @@ import com.ksknt.test.mob.and.appcontainer.AppsCatalog
 import com.ksknt.test.mob.and.appcontainer.MainDestination
 import com.ksknt.test.mob.and.appcontainer.diceRoller.DiceRollerApp
 import com.ksknt.test.mob.and.appcontainer.diceRoller.DiceRollerDestination
+import com.ksknt.test.mob.and.appcontainer.tipCalculator.TipCalculatorApp
+import com.ksknt.test.mob.and.appcontainer.tipCalculator.TipCalculatorDestination
 
 @Composable
 fun AppNavHost(
@@ -26,6 +28,9 @@ fun AppNavHost(
         }
         composable(route = DiceRollerDestination.route) {
             DiceRollerApp(navController = navController)
+        }
+        composable(route = TipCalculatorDestination.route) {
+            TipCalculatorApp(navController = navController)
         }
     }
 }
