@@ -4,6 +4,7 @@ import com.ksknt.test.mob.and.appcontainer.affirmations.AffirmationsAppDestinati
 import com.ksknt.test.mob.and.appcontainer.dessertClicker.DessertClickerAppDestination
 import com.ksknt.test.mob.and.appcontainer.diceRoller.DiceRollerDestination
 import com.ksknt.test.mob.and.appcontainer.tipCalculator.TipCalculatorDestination
+import com.ksknt.test.mob.and.appcontainer.unscramble.UnscrambleAppDestination
 
 data class AppModel(
     val name: String,
@@ -130,7 +131,7 @@ val APPS = listOf(
         name = "Unscramble",
         description = "Unscramble game",
         linkURL = "https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble.git",
-        destinationURL = DessertClickerAppDestination.route,
+        destinationURL = UnscrambleAppDestination.route,
         functionalities = listOf(
             AppFunctionalityModel(
                 name = "Remember Savable State",
