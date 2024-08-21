@@ -1,5 +1,7 @@
 package com.ksknt.test.mob.and.appcontainer
 
+import com.ksknt.test.mob.and.appcontainer.affirmations.AffirmationsAppDestination
+import com.ksknt.test.mob.and.appcontainer.dessertClicker.DessertClickerAppDestination
 import com.ksknt.test.mob.and.appcontainer.diceRoller.DiceRollerDestination
 import com.ksknt.test.mob.and.appcontainer.tipCalculator.TipCalculatorDestination
 
@@ -82,6 +84,61 @@ val APPS = listOf(
             AppFunctionalityModel(
                 name = "Testing",
                 description = "Local and instrumentation tests."
+            )
+        )
+    ),
+
+    AppModel(
+        name = "Affirmations",
+        description = "Daily affirmation quites",
+        linkURL = "https://github.com/google-developer-training/basic-android-kotlin-compose-training-affirmations",
+        destinationURL = AffirmationsAppDestination.route,
+        functionalities = listOf(
+            AppFunctionalityModel(
+                name = "Scrollable Lists",
+                description = "Create a scrollable list using the LazyColumn composable."
+            ),
+            AppFunctionalityModel(
+                name = "Card Composable",
+                description = "Use Card composable to create list items."
+            ),
+            AppFunctionalityModel(
+                name = "Build a List",
+                description = "Build a list using custom list items."
+            ),
+            AppFunctionalityModel(
+                name = "Vector Drawable",
+                description = "You can define them in XML, instead of providing versions of a bitmap asset for all density buckets."
+            )
+        )
+    ),
+
+    AppModel(
+        name = "Dessert Clicker",
+        description = "Dessert clicker application",
+        linkURL = "https://github.com/google-developer-training/basic-android-kotlin-compose-training-dessert-clicker",
+        destinationURL = DessertClickerAppDestination.route,
+        functionalities = listOf(
+            AppFunctionalityModel(
+                name = "Remember Savable State",
+                description = "Save info on configuration changes."
+            )
+        )
+    ),
+
+    AppModel(
+        name = "Unscramble",
+        description = "Unscramble game",
+        linkURL = "https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble.git",
+        destinationURL = DessertClickerAppDestination.route,
+        functionalities = listOf(
+            AppFunctionalityModel(
+                name = "Remember Savable State",
+                description = "Save info on configuration changes."
+            ),
+            AppFunctionalityModel(
+                name = "Backing properties",
+                description = "A backing property lets you return something from a getter other than the exact object."
             )
         )
     )
